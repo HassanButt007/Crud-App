@@ -1,0 +1,32 @@
+<h3 style="color: #232323; text-align:center;font-weight:600; padding: 20px 0px">{{viewTitle}}</h3>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <form class="row" method="POST" action="/employee" autocomplete="off">
+            <input type="hidden" name="_id" value="{{employee._id}}">
+                <div class="col-md-6">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" name="fullname" placeholder="Full Name" value="{{employee.fullname}}" required>
+                </div>
+                <div class="col-md-6">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" name="email" placeholder="Email Address" value="{{employee.email}}"  required>
+                </div>
+                    <div class="col-md-6">
+                        <label>Phone Number</label>
+                        <input type="number" class="form-control" name="mobile" placeholder="Phone Number" value="{{employee.mobile}}" required>
+                    </div>
+                    <div class="col-md-6 col-md-4">
+                        <label>Designation</label>
+                        <input type="text" class="form-control" name="Designation" placeholder="Your Designation" value="{{employee.Designation}}" required>
+                    </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-success mt-4 d-block m-auto">Submit <i class="fas fa-database"></i></button>
+                    <a href="/employee/list">
+                    <button type="button" class="btn btn-secondary"> All List  <i class="fas fa-list fa-lg"></i></button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
